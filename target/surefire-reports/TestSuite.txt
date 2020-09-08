@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: TestSuite
--------------------------------------------------------------------------------
-Tests run: 10, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 25.332 s <<< FAILURE! - in TestSuite
-org.calender.testcases.ScheduleEventsScreenTest.setRecurringDate  Time elapsed: 7.127 s  <<< FAILURE!
-java.lang.AssertionError: expected [Repeats weekly on Mon, Wed, Fri] but found [Repeats weekly on Mon, Wed, Fr]
-	at org.calender.testcases.ScheduleEventsScreenTest.setRecurringDate(ScheduleEventsScreenTest.java:29)
-

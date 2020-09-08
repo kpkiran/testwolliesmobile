@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Woolies_Test" class="navigator-link">
+              <span class="suite-name border-failed">Woolies Test</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Woolies_Test" class="navigator-link ">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Woolies_Test" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Woolies_Test" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Woolies_Test" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Woolies_Test" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Woolies_Test" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Woolies_Test" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">10 methods, 1 failed,   9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Woolies_Test" class="hide-methods failed suite-Woolies_Test"> (hide)</a> <!-- hide-methods failed suite-Woolies_Test -->
+                      <a href="#" panel-name="suite-Woolies_Test" class="show-methods failed suite-Woolies_Test"> (show)</a> <!-- show-methods failed suite-Woolies_Test -->
+                    </span>
+                    <div class="method-list-content failed suite-Woolies_Test">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Woolies_Test" title="org.calender.testcases.ScheduleEventsScreenTest" class="method navigator-link" hash-for-method="setRecurringDate">setRecurringDate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Woolies_Test -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Woolies_Test" class="hide-methods passed suite-Woolies_Test"> (hide)</a> <!-- hide-methods passed suite-Woolies_Test -->
+                      <a href="#" panel-name="suite-Woolies_Test" class="show-methods passed suite-Woolies_Test"> (show)</a> <!-- show-methods passed suite-Woolies_Test -->
+                    </span>
+                    <div class="method-list-content passed suite-Woolies_Test">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Woolies_Test" title="org.calender.testcases.CalendarEntryScreenTest" class="method navigator-link" hash-for-method="addEvent">addEvent</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Woolies_Test" title="org.calender.testcases.CalendarEntryScreenTest" class="method navigator-link" hash-for-method="addEventEntry">addEventEntry</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Woolies_Test" title="org.calender.testcases.ScheduleEventsScreenTest" class="method navigator-link" hash-for-method="enterMeetingTitle">enterMeetingTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Woolies_Test" title="org.calender.testcases.LaunchScreenTest" class="method navigator-link" hash-for-method="gotItTest">gotItTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Woolies_Test" title="org.calender.testcases.ScheduleEventsScreenTest" class="method navigator-link" hash-for-method="invitePeople(testtwo@gmail.com)">invitePeople(testtwo@gmail.com)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Woolies_Test" title="org.calender.testcases.ScheduleEventsScreenTest" class="method navigator-link" hash-for-method="invitePeople(testone@gmail.com)">invitePeople(testone@gmail.com)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Woolies_Test" title="org.calender.testcases.LaunchScreenTest" class="method navigator-link" hash-for-method="moveToNextScreen">moveToNextScreen</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Woolies_Test" title="org.calender.testcases.ScheduleEventsScreenTest" class="method navigator-link" hash-for-method="saveInvite">saveInvite</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Woolies_Test" title="org.calender.testcases.ScheduleEventsScreenTest" class="method navigator-link" hash-for-method="verifyElementsPresent">verifyElementsPresent</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Woolies_Test -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Woolies_Test" class="panel Woolies_Test">
+          <div class="suite-Woolies_Test-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">org.calender.testcases.ScheduleEventsScreenTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="setRecurringDate">
+                  </a> <!-- setRecurringDate -->
+                  <span class="method-name">setRecurringDate</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Repeats weekly on Mon, Wed, Fri] but found [Repeats weekly on Mon, Wed, Fr]
+	at org.calender.Screens.ScheduleEventsScreen.enterReccuringDays(ScheduleEventsScreen.java:50)
+	at org.calender.testcases.ScheduleEventsScreenTest.setRecurringDate(ScheduleEventsScreenTest.java:29)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Woolies_Test-class-failed -->
+          <div class="suite-Woolies_Test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.calender.testcases.ScheduleEventsScreenTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterMeetingTitle">
+                  </a> <!-- enterMeetingTitle -->
+                  <span class="method-name">enterMeetingTitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invitePeople(testtwo@gmail.com)">
+                  </a> <!-- invitePeople(testtwo@gmail.com) -->
+                  <span class="method-name">invitePeople</span>
+                  <span class="parameters">(testtwo@gmail.com)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invitePeople(testone@gmail.com)">
+                  </a> <!-- invitePeople(testone@gmail.com) -->
+                  <span class="method-name">invitePeople</span>
+                  <span class="parameters">(testone@gmail.com)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="saveInvite">
+                  </a> <!-- saveInvite -->
+                  <span class="method-name">saveInvite</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyElementsPresent">
+                  </a> <!-- verifyElementsPresent -->
+                  <span class="method-name">verifyElementsPresent</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Woolies_Test-class-passed -->
+          <div class="suite-Woolies_Test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.calender.testcases.LaunchScreenTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="gotItTest">
+                  </a> <!-- gotItTest -->
+                  <span class="method-name">gotItTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="moveToNextScreen">
+                  </a> <!-- moveToNextScreen -->
+                  <span class="method-name">moveToNextScreen</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Woolies_Test-class-passed -->
+          <div class="suite-Woolies_Test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.calender.testcases.CalendarEntryScreenTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addEvent">
+                  </a> <!-- addEvent -->
+                  <span class="method-name">addEvent</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addEventEntry">
+                  </a> <!-- addEventEntry -->
+                  <span class="method-name">addEventEntry</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Woolies_Test-class-passed -->
+        </div> <!-- panel Woolies_Test -->
+        <div panel-name="test-xml-Woolies_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/ravikiranpadki/technicaltest/WooliesTechTest/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Woolies Test&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;org.calender.testcases.TestListeners&quot;/&gt;
+    &lt;listener class-name=&quot;org.calender.utils.ExtentReporterNG&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;WooliesTest&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;org.calender.testcases.LaunchScreenTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;moveToNextScreen&quot;/&gt;
+          &lt;include name=&quot;gotItTest&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- org.calender.testcases.LaunchScreenTest --&gt;
+      &lt;class name=&quot;org.calender.testcases.CalendarEntryScreenTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;addEventEntry&quot;/&gt;
+          &lt;include name=&quot;addEvent&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- org.calender.testcases.CalendarEntryScreenTest --&gt;
+      &lt;class name=&quot;org.calender.testcases.ScheduleEventsScreenTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;verifyElementsPresent&quot;/&gt;
+          &lt;include name=&quot;enterMeetingTitle&quot;/&gt;
+          &lt;include name=&quot;setRecurringDate&quot;/&gt;
+          &lt;include name=&quot;invitePeople&quot;/&gt;
+          &lt;include name=&quot;saveInvite&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- org.calender.testcases.ScheduleEventsScreenTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- WooliesTest --&gt;
+&lt;/suite&gt; &lt;!-- Woolies Test --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Woolies_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Woolies Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">WooliesTest (3 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Woolies_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Woolies Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Woolies_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Woolies Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Woolies_Test');
+function tableData_Woolies_Test() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(10);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'setRecurringDate')
+data.setCell(0, 2, 'org.calender.testcases.ScheduleEventsScreenTest')
+data.setCell(0, 3, 7122);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'addEventEntry')
+data.setCell(1, 2, 'org.calender.testcases.CalendarEntryScreenTest')
+data.setCell(1, 3, 3450);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'moveToNextScreen')
+data.setCell(2, 2, 'org.calender.testcases.LaunchScreenTest')
+data.setCell(2, 3, 2159);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyElementsPresent')
+data.setCell(3, 2, 'org.calender.testcases.ScheduleEventsScreenTest')
+data.setCell(3, 3, 1157);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'gotItTest')
+data.setCell(4, 2, 'org.calender.testcases.LaunchScreenTest')
+data.setCell(4, 3, 1121);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'invitePeople')
+data.setCell(5, 2, 'org.calender.testcases.ScheduleEventsScreenTest')
+data.setCell(5, 3, 1058);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'addEvent')
+data.setCell(6, 2, 'org.calender.testcases.CalendarEntryScreenTest')
+data.setCell(6, 3, 1005);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'enterMeetingTitle')
+data.setCell(7, 2, 'org.calender.testcases.ScheduleEventsScreenTest')
+data.setCell(7, 3, 575);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'saveInvite')
+data.setCell(8, 2, 'org.calender.testcases.ScheduleEventsScreenTest')
+data.setCell(8, 3, 543);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'invitePeople')
+data.setCell(9, 2, 'org.calender.testcases.ScheduleEventsScreenTest')
+data.setCell(9, 3, 79);
+window.suiteTableData['Woolies_Test']= { tableData: data, tableDiv: 'times-div-Woolies_Test'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 18 seconds</span>
+              <div id="times-div-Woolies_Test">
+              </div> <!-- times-div-Woolies_Test -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Woolies_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Woolies Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Woolies_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">4 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">org.calender.testcases.ScheduleEventsScreenTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setUp</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">org.calender.testcases.CalendarEntryScreenTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setUp</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Woolies_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.calender.testcases.LaunchScreenTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.calender.testcases.CalendarEntryScreenTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">init</span>
+                <span class="method-start">5287 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.calender.testcases.LaunchScreenTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">init</span>
+                <span class="method-start">5474 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.calender.testcases.ScheduleEventsScreenTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">init</span>
+                <span class="method-start">5520 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.calender.testcases.LaunchScreenTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">moveToNextScreen</span>
+                <span class="method-start">5586 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">gotItTest</span>
+                <span class="method-start">7747 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.calender.testcases.CalendarEntryScreenTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">addEventEntry</span>
+                <span class="method-start">8870 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addEvent</span>
+                <span class="method-start">12321 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.calender.testcases.ScheduleEventsScreenTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyElementsPresent</span>
+                <span class="method-start">13326 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">enterMeetingTitle</span>
+                <span class="method-start">14484 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setRecurringDate</span>
+                <span class="method-start">15059 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invitePeople(testone@gmail.com)</span>
+                <span class="method-start">22457 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invitePeople(testtwo@gmail.com)</span>
+                <span class="method-start">22536 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">saveInvite</span>
+                <span class="method-start">23595 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.calender.testcases.LaunchScreenTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">24191 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

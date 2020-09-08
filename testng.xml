@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Woolies Test">
+	<listeners>
+		<listener class-name="org.calender.testcases.TestListeners" />
+		<listener class-name="org.calender.utils.ExtentReporterNG" />
+	</listeners>
+	<test name="WooliesTest">
+		<classes>
+			<class name="org.calender.testcases.LaunchScreenTest">
+				<methods>
+					<include name="moveToNextScreen" />
+					<include name="gotItTest" />
+				</methods>
+			</class>
+			<class name="org.calender.testcases.CalendarEntryScreenTest">
+				<methods>
+					<include name="addEventEntry" />
+					<include name="addEvent" />
+				</methods>
+			</class>
+			<class name="org.calender.testcases.ScheduleEventsScreenTest">
+				<methods>
+					<include name="verifyElementsPresent" />
+					<include name="enterMeetingTitle" />
+					<include name="setRecurringDate" />
+					<include name="invitePeople" />
+					<include name="saveInvite" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -10,3 +10,4 @@ Clone the project on your laptop/desktop, go to the project location and run the
 Features not implemented yet: 
 1. Logging using Log4j
 2. Failure screenshot in Extent Reports
+3. Deletion of existing invite or invite created
